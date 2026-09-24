@@ -1,5 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 40">
-  <text x="0" y="28" font-family="Inter, sans-serif" font-weight="900" font-size="24" fill="#FAFAFA" letter-spacing="-1">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 48" fill="none">
+  <!-- Monogram -->
+  <g>
+    <!-- hexagon/shield frame -->
+    <path d="M24 4 L40 12 L40 30 L24 44 L8 30 L8 12 Z"
+          fill="#0A0A0A" stroke="#F59E0B" stroke-width="1.5"/>
+    <!-- I -->
+    <path d="M20 18 H20.001 M20 18 V34" stroke="#FAFAFA" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- slash divider -->
+    <path d="M22 32 L26 20" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round"/>
+    <!-- O -->
+    <circle cx="31" cy="26" r="4.5" stroke="#FAFAFA" stroke-width="2.5"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="56" y="33"
+        font-family="Inter, system-ui, sans-serif"
+        font-weight="900"
+        font-size="22"
+        letter-spacing="-0.5"
+        fill="#FAFAFA">
     IRON<tspan fill="#F59E0B">-</tspan>OAKS
   </text>
 </svg>

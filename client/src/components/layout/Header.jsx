@@ -8,9 +8,9 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-base/80 backdrop-blur">
       <nav className="container-x flex h-16 items-center justify-between">
-        <Link to="/" className="flex items-center gap-2 text-lg font-black tracking-tight">
-          <img src="/logo.svg" alt={BRAND.name} className="h-6" />
-        </Link>
+      <Link to="/" className="flex items-center gap-2.5">
+        <img src="/logo.svg" alt="Iron-Oaks" className="h-8 w-auto" />
+      </Link> 
 
         <ul className="hidden md:flex items-center gap-8">
           {NAV_LINKS.map((l) => (
