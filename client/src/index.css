@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-base: #0A0A0A;
+  --color-elevated: #141414;
+  --color-line: #262626;
+  --color-ink: #FAFAFA;
+  --color-muted: #A1A1AA;
+  --color-accent: #F59E0B;
+  --color-accent-hover: #FBBF24;
+
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body {
+    background-color: var(--color-base);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4 { font-weight: 800; letter-spacing: -0.02em; }
+}
+
+@layer components {
+  .container-x {
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 1.5rem;
+  }
+  .btn-primary {
+    display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--color-accent);
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    color: var(--color-base);
+    transition: background-color 0.15s;
+  }
+  .btn-primary:hover { background-color: var(--color-accent-hover); }
+
+  .btn-ghost {
+    display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--color-line);
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    color: var(--color-ink);
+    transition: all 0.15s;
+  }
+  .btn-ghost:hover { border-color: var(--color-accent); color: var(--color-accent); }
+
+  .section { padding-block: 6rem; }
+  .eyebrow {
+    font-size: 0.75rem; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.2em;
+    color: var(--color-accent);
+  }
+}
