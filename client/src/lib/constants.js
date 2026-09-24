@@ -1,7 +1,7 @@
 export const BRAND = {
   name: "Iron-Oaks",
   tagline: "Sharp cuts. Timeless craft.",
-  phone: "+27 21 555 0123",
+  phone: "+27 79 901 2629",
   email: "hello@iron-oaks.co.za",
   address: "127 Kloof Street, Gardens, Cape Town, 8001",
   mapsUrl: "https://maps.google.com/?q=127+Kloof+Street+Cape+Town",
